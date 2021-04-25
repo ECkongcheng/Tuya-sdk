@@ -5,8 +5,11 @@ Myself TuyaSDK Temp
 # Demo 
 
 ├── cloudfunctions             // Cloud Function directory
+
 │   ├── ty-service            // SDK
+
 ├── miniprogram                 // Applet home directory
+
 │   ├── image                   // The gallery
 │   ├── libs                   // Third-party libraries
 │   ├── pages                  // The directory for the specific page
