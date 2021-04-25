@@ -3,17 +3,15 @@ This project is developed using Tuya SDK, which enables you to quickly develop b
 Myself TuyaSDK Temp
 
 # Demo 
-
+```
 ├── cloudfunctions             // Cloud Function directory
-
-│   ├── ty-service            // SDK
-
+│   ├── ty-service            // SDK
 ├── miniprogram                 // Applet home directory
-
-│   ├── image                   // The gallery
-│   ├── libs                   // Third-party libraries
-│   ├── pages                  // The directory for the specific page
-│   ├── app.js                 // Applet entry
-│   ├── app.json               // The configuration file
+│   ├── image                   // The gallery
+│   ├── libs                   // Third-party libraries
+│   ├── pages                  // The directory for the specific page
+│   ├── app.js                 // Applet entry
+│   ├── app.json               // The configuration file
 ├── project.config.json        // Project profile
 └── README.md            // Description file
+```
