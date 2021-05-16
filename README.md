@@ -1,9 +1,8 @@
 # Tuya-sdk
 This project is developed using Tuya SDK, which enables you to quickly develop branded apps connecting and controlling smart scenarios of many devices.For more information, please check Tuya Developer Website.
 
-Myself TuyaSDK Temp
+TuyaSDK Temp
 
-![Tuya-插座面板](https://user-images.githubusercontent.com/63355541/116043248-01cc2180-a6a2-11eb-8fb7-d23ed54d2a40.jpg)
 
 
 # Demo 
