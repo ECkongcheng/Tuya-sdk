@@ -18,7 +18,8 @@ Page({
     rwDpList: {}, //可上报可下发功能点
     isRoDpListShow: false,
     isRwDpListShow: false,
-    forest: '../../../image/forest@2x.png'
+    forest: '../../../image/forest@2x.png',
+    Voltage:235
   },
 
   /**

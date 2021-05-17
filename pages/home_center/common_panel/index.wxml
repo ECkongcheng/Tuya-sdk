@@ -6,25 +6,37 @@
 
 <view class="common-panel-header">
   <view class="common-panel-header-block">
-    <view class="common-panel-header-dpName">{{titleItem.name}}</view>
-    <view class="common-panel-header-dpValue">{{titleItem.value}}</view>
+    <!--
+    <view class="common-panel-header-dpName">{{titleItem.name}}</view>  -->
+    <block wx:if="{{titleItem.value > 0}}">
+      <view class="common-panel-header-dpValue"
+      style="display: block; box-sizing: border-box; left: 120px; top: 120px; position: relative">开</view>
+    </block> 
+    <block wx:if="{{titleItem.value == 0}}">
+      <view class="common-panel-header-dpValue"
+      style="display: block; box-sizing: border-box; left: 120px; top: 120px; position: relative">关</view>
+    </block> 
+    
   </view>
 </view>
-
+<!--
 <block wx:if="{{isRoDpListShow}}">
   <view class="statuslist">
     <block wx:for="{{roDpList}}" wx:key="{{item.code}}" wx:for-item="item" wx:for-index='idx'>
-      <view class="{{utils.countDpItem(roDpListLength,idx)}}">
-        <view class="roDpItem-dpName">{{item.code}}</view>
+      <view class="{{utils.countDpItem(roDpListLength,idx)}}">  
+        <view class="roDpItem-dpName">{{item.code}}</view>  
         <view class="roDpItem-status">{{item.value}}</view>
       </view>
     </block>
   </view>
 </block>
+-->
 
-<view class="scroll-view">
+<view class="scroll-view"style="top: 15px;position: relative;" >
   <block wx:if="{{isRwDpListShow}}">
+
     <block wx:for="{{rwDpList}}" wx:key="{{item.code}}" wx:for-item="item">
+
       <block wx:if="{{item.type === 'Boolean'}}">
         <Boolean model:isChecked="{{item.value}}" dpCode="{{item.code}}" dpName="{{item.name}}" bind:sendDp="sendDp" />
       </block>
@@ -36,6 +48,33 @@
         <Enum model:value="{{item.value}}" values="{{item.values}}" dpCode="{{item.code}}" dpName="{{item.name}}"
           bind:sendDp="sendDp" />
       </block>
+  
     </block>
   </block>
+  <view class="integer-container">
+
+    <block wx:for="{{roDpList}}" wx:key="{{item.code}}" wx:for-item="item" wx:for-index='idx'>
+      <view class="{{utils.countDpItem(roDpListLength,idx)}}">  
+        <block wx:if="{{item.code == 'cur_current'}}">
+          <view class="progress-bar">
+            <view class="roDpItem-status">{{'电流:' +  item.value + 'mA' }}</view>
+          </view>  
+        </block>  
+        <block wx:elif="{{item.code == 'cur_power'}}"> 
+          <view class="progress-bar"> 
+            <view class="roDpItem-status">{{'功率:' +  item.value/10 + 'W' }}</view>
+          </view>
+        </block>
+        <block wx:elif="{{item.code == 'cur_voltage'}}">   
+          <view class="progress-bar">
+            <view class="roDpItem-status">{{'电压:' +  item.value/10 + 'V' }}</view>
+           </view>
+        </block>
+      </view>
+    </block>
+
+
+
+
+  </view>
 </view>
