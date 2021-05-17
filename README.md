@@ -3,7 +3,7 @@ This project is developed using Tuya SDK, which enables you to quickly develop b
 
 TuyaSDK Temp
 
-![image](https://user-images.githubusercontent.com/63355541/118434174-2d758100-b70f-11eb-9f41-6060b4b4ac3b.png)
+![image](https://user-images.githubusercontent.com/63355541/118510225-558ecf80-b763-11eb-8db1-698e8dec27a4.png)
  
 
 
