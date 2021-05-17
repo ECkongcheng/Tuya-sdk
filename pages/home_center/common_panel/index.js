@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    device_name: '23333',
+    device_name: '',
     titleItem: {
       name: '',
       value: '',

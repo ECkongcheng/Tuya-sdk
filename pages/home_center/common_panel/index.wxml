@@ -2,14 +2,12 @@
 <wxs src="./index.wxs" module="utils" />
 
 <image class="common-panel-backgroud" src="{{forest}}" />
-<navbar device_name="空城的小插座" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
+<navbar device_name="{{device_name}}" bind:jumpTodeviceEditPage="jumpTodeviceEditPage" />
 
 <view class="common-panel-header">
-  <view class="common-panel-header-block">  <!-- dpName style-->
-    <view class="common-panel-header-dpName" 
-    style="width: 200rpx; height: 54rpx; display: block; box-sizing: border-box; left: 85rpx; top: 185rpx; position: relative">开关状态</view>   <!--/*{{titleItem.name}} 返回 开关1*/ -->
-    <view class="common-panel-header-dpValue"
-    style="width: 240rpx; height: 100rpx; display: block; box-sizing: border-box; left: 180rpx; top: 190rpx; position: relative">{{titleItem.value}}</view>   <!--/*{{titleItem.value}} bool 状态值 */ -->
+  <view class="common-panel-header-block">
+    <view class="common-panel-header-dpName">{{titleItem.name}}</view>
+    <view class="common-panel-header-dpValue">{{titleItem.value}}</view>
   </view>
 </view>
 
@@ -41,8 +39,3 @@
     </block>
   </block>
 </view>
-<button style="position: relative; left: -213rpx; top: 0rpx; width: 120px; height: 96rpx; display: block; box-sizing: border-box">电量统计</button>
-<icon style="position: relative; left: 24rpx; top: -80rpx; width: 64rpx; height: 64rpx; display: block; box-sizing: border-box" type="success" size="22"></icon>
-
-
-

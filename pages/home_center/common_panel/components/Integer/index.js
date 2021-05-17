@@ -31,6 +31,7 @@ Component({
       : { step: 1, min: 1, max: 1, unit: '%' };
 
       this.setData({ step, min, max, unit })
+      console.log('values',values)
     }
   },
 

@@ -1,12 +1,12 @@
 /* miniprogram/pages/home_center/common_panel/index.js.wxss */
-/* 背景 */
+
 .common-panel-backgroud {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 340Px;
-	background-color: #000000;   /* #66ccff  */
+	height: 320px;
+	background-color: #27c3d9;
 }
 
 .common-panel-header {
@@ -25,28 +25,28 @@
 }
 
 .common-panel-header-dpName {
-	width: 100px;
-  height:25px ;   /* 25px */
-  text-align: center;  /* center */
+	width: 160px;
+  height: 25px;
+  text-align: center;
 	font-family: HelveticaNeue;
-	font-size: 16px; /* 12px */
-  line-height: 27px;
+	font-size: 12px;
+  line-height: 24px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-	color: #00e2cd;
+	color: #fff;
 }
 
 .common-panel-header-dpValue {
-	width: 100px;   /*  114px   */
-	height: 45px;   /*  75px   */
-  font-family: HelveticaNeue;/* DINCondensed-Bold  */
+	width: 114px;
+	height: 75px;
+  font-family: DINCondensed-Bold;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: center;
-	font-size: 36px;   /*  74px   */
-	color: hsl(78, 94%, 53%);   /*  #ffffff   */
+	font-size: 74px;
+	color: #fff;
 }
 
 .roDpItem-normal {
